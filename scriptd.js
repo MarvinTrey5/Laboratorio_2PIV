@@ -68,7 +68,7 @@ cont3.addEventListener("focus", () => {
     mostrar_T3.setAttribute("style","color:white");
     cont3.setAttribute("style","background-color:black");
 });
-// focusout
+// Aquí se utiliza el focusout en los contenedores
 cont1.addEventListener("focusout", () => {
     mostrar_T1.innerHTML = "Continuamos";
     mostrar_T1.setAttribute("style","color:black");
