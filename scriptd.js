@@ -84,3 +84,41 @@ cont3.addEventListener("focusout", () => {
     mostrar_T3.setAttribute("style","color:yellow");
     cont3.setAttribute("style","background-color:teal");
 });
+
+// Declarar los contenedores
+const mvContainer1 = document.getElementById("mvContainer_1");
+const mvContainer2 = document.getElementById("mvContainer_2");
+const mvContainer3 = document.getElementById("mvContainer_3");
+
+// Declarar los 'listeners'
+mvContainer1.addEventListener("mouseover", () => {
+    mvContainer1.innerHTML = "Tenga";
+    mvContainer1.setAttribute("style","background-color:blue");
+    
+});
+
+mvContainer2.addEventListener("mouseover", () => {
+    mvContainer2.innerHTML = "Buen";
+    mvContainer2.setAttribute("style","background-color:green");
+});
+
+mvContainer3.addEventListener("mouseover", () => {
+    mvContainer3.innerHTML = "Dia";
+    mvContainer3.setAttribute("style","background-color:yellow");
+});
+
+// Cuando el cursor sale de nuestro contenedor
+mvContainer1.addEventListener("mouseout", () => {
+    mvContainer1.innerHTML = "";
+    mvContainer1.setAttribute("style","background-color:aqua");
+});
+
+mvContainer2.addEventListener("mouseout", () => {
+    mvContainer2.innerHTML = "";
+    mvContainer2.setAttribute("style","background-color:aqua");
+});
+
+mvContainer3.addEventListener("mouseout", () => {
+    mvContainer3.innerHTML = "";
+    mvContainer3.setAttribute("style","background-color:aqua");
+});
